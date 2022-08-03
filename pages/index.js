@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Button } from "primereact/button";
+import Navbar from "../components/navbar";
 
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
@@ -14,10 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
-        <div className="my-2">
-          <Button label="Click Me 👋🏻" className="!mx-6" />
-          <Button label="Click Me One more time 👋🏻" />
-        </div>
+        <Navbar />
       </body>
     </div>
   );
