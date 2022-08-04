@@ -7,7 +7,7 @@ export default function Navbar() {
   const items = [
     {
       label: "Home",
-      icon: "pi pi-fw pi-file",
+      icon: "pi pi-home",
       command: () => {
         if (router.pathname === "/") return;
         router.push({ pathname: "/" });
@@ -34,9 +34,9 @@ export default function Navbar() {
 
   return (
     <Menubar
+      className="!fixed !top-0 !left-0 !right-0 !z-10 shadow-md"
       start={<h1 className="text-[2.5rem] font-bold mx-4">🔥</h1>}
       model={items}
-      onClick={(e) => console.log(e.target)}
     />
   );
 }
