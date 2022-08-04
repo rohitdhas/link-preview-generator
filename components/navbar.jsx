@@ -25,11 +25,6 @@ export default function Navbar() {
           .open("https://github.com/rohitdhas/link-preview-generator", "_blank")
           .focus(),
     },
-    {
-      label: "Quit",
-      icon: "pi pi-fw pi-power-off",
-      command: () => window.close(),
-    },
   ];
 
   return (

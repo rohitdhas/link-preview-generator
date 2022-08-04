@@ -62,7 +62,7 @@ export default function Home() {
         <Toast ref={toastRef} />
         <div className="mt-[7rem]">
           <h1 className="text-3xl lg:text-5xl text-slate-800 font-bold text-center !leading-[1.3]">
-            Link 🔗 Preview <br /> Generator ✨
+            Link 🔗 Preview <br /> Generator ⚡
           </h1>
           <div className="flex flex-col lg:flex-row justify-center align items-center my-8 bg-white p-4 rounded-md w-min mx-auto shadow-md">
             <InputText
