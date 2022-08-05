@@ -113,7 +113,7 @@ export default function Home() {
             <h5 className="text-xl font-bold text-slate-800">
               API Request (GET) 🌠:
             </h5>
-            <code className="bg-slate-100 py-6 px-4 rounded-md block my-4 text-sm font-bold text-slate-800">
+            <code className="bg-slate-100 py-6 px-4 rounded-md block my-4 text-sm font-bold text-slate-600">
               https://link-preview-generator.vercel.app/api/getPreview?url=https://github.com
             </code>
           </div>
@@ -121,7 +121,7 @@ export default function Home() {
             <h5 className="text-xl font-bold text-slate-800">
               API Response (JSON) 🎈:
             </h5>
-            <code className="bg-slate-100 leading-relaxed py-6 px-4 rounded-md block my-4 text-sm font-bold text-slate-800">
+            <code className="bg-slate-100 leading-relaxed py-6 px-4 rounded-md block my-4 text-sm font-bold text-slate-600">
               {JSON.stringify(exampleRes, null, 4)}
             </code>
           </div>
