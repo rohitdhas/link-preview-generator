@@ -26,6 +26,9 @@ export default function Tabs({ data }) {
       <TabPanel header="Facebook">
         <FacebookCard data={data} url={url} />
       </TabPanel>
+      <TabPanel header="Peerlist">
+        <PeerlistCard data={data} url={url} />
+      </TabPanel>
     </TabView>
   );
 }
@@ -38,7 +41,7 @@ function TwitterCard({ data, url }) {
         {data.title ? data.title.split(" ").slice(0, 15).join(" ") : ""}
       </div>
       <div className="description text-black text-sm">
-        {modifyDescription(data.description)}
+        {modifyDescription(data.description, 20)}
       </div>
       <a
         href={url}
@@ -68,7 +71,7 @@ function FacebookCard({ data, url }) {
         {data.title ? data.title.split(" ").slice(0, 15).join(" ") : ""}
       </div>
       <div className="description text-black">
-        {modifyDescription(data.description)}
+        {modifyDescription(data.description, 20)}
       </div>
     </Card>
   );
@@ -84,9 +87,33 @@ function InstagramCard({ data, url }) {
             {data.title ? data.title.split(" ").slice(0, 15).join(" ") : ""}
           </div>
           <div className="description text-gray-700 text-xs mt-2">
-            {modifyDescription(data.description)}
+            {modifyDescription(data.description, 20)}
           </div>
         </Card>
+      </a>
+    </Link>
+  );
+}
+
+function PeerlistCard({ data, url }) {
+  return (
+    <Link href={url} target="_blank">
+      <a target="_blank">
+        <div className="flex justify-between bg-gray-100 rounded-md">
+          <div className="mr-2 p-2">
+            <div className="title font-bold text-black text-sm">
+              {data.title ? data.title.split(" ").slice(0, 15).join(" ") : ""}
+            </div>
+            <div className="description text-gray-700 text-xs mt-2">
+              {modifyDescription(data.description, 10)}
+            </div>
+          </div>
+          <img
+            className="h-[120px] w-auto rounded-r-md"
+            alt="Card"
+            src={data.img}
+          />
+        </div>
       </a>
     </Link>
   );
