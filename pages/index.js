@@ -109,7 +109,7 @@ export default function Home() {
           >
             API Example 🌐
           </h3>
-          <div className="my-6 w-[90%] md:w-[50%] overflow-hidden">
+          <div className="mb-6 mt-[4rem] w-[90%] md:w-[50%] overflow-hidden">
             <h5 className="text-xl font-bold text-slate-800">
               API Request (GET) 🌠:
             </h5>
