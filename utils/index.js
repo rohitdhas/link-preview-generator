@@ -6,7 +6,10 @@ export function getDomain(url) {
 }
 
 export function selectImageURL(favicons, images) {
-  if (!favicons.length && images.length) {
+  if (!favicons || !images)
+    return "https://www.carnival.com/_ui/responsive/ccl/assets/images/notfound_placeholder.svg";
+
+  if (!favicons.length && !images.length) {
     return "https://www.carnival.com/_ui/responsive/ccl/assets/images/notfound_placeholder.svg";
   } else if (images.length) {
     return images[0];
@@ -21,10 +24,10 @@ export function validateURL(url) {
   return pattern.test(url);
 }
 
-export function modifyDescription(description) {
+export function modifyDescription(description, size) {
   if (!description) return "No description found!";
 
   const arr = description.split(" ");
   if (!arr.length) return "No description found!";
-  return `${arr.slice(0, 20).join(" ")}...`;
+  return `${arr.slice(0, size).join(" ")}...`;
 }
