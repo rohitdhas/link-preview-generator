@@ -1,21 +1,16 @@
 import { Menubar } from "primereact/menubar";
-import { useRouter } from "next/router";
 
 export default function Navbar() {
-  const router = useRouter();
-
   const items = [
     {
       label: "Home",
       icon: "pi pi-home",
-      command: () => {
-        if (router.pathname === "/") return;
-        router.push({ pathname: "/" });
-      },
+      command: () => window.open("#top", "_self"),
     },
     {
       label: "API",
       icon: "pi pi-globe",
+      command: () => window.open("#api", "_self"),
     },
     {
       label: "GitHub",
