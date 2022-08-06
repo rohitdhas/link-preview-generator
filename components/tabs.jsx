@@ -26,7 +26,7 @@ export default function Tabs({ data }) {
       <TabPanel header="Facebook">
         <FacebookCard data={data} url={url} />
       </TabPanel>
-      <TabPanel header="Peerlist">
+      <TabPanel header="Other">
         <PeerlistCard data={data} url={url} />
       </TabPanel>
     </TabView>
