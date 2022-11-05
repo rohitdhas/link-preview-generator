@@ -1,4 +1,4 @@
-<h1>⚡</h1>
+![Icon](https://raw.githubusercontent.com/rohitdhas/link-preview-generator/main/public/logo.png)
 
 ## Link Preview Generator
 
