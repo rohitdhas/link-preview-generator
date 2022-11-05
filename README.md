@@ -1,34 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ⚡
 
-## Getting Started
+## Link Preview Generator
 
-First, run the development server:
+Generate awesome link previews in your own website...
 
-```bash
-npm run dev
-# or
-yarn dev
+![Banner](https://raw.githubusercontent.com/rohitdhas/storefront/main/public/link-preview-banner.png)
+
+## 🌐 Link Preview API
+
+Get link preview data in JSON format with this api
+
+### Example GET Request:
+
+```js
+fetch(
+  "https://link-preview-generator.vercel.app/api/getPreview?url=https://github.com"
+)
+  .then((res) => res.json())
+  .then((data) => console.log(data));
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Response:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```json
+{
+  "url": "https://github.com/",
+  "title": "GitHub: Where the world builds software",
+  "siteName": "GitHub",
+  "description": "GitHub is where over 83 million developers shape the future of software, together. Contribute to the open source community, manage your Git repositories, review code like a pro, track bugs and features, power your CI/CD and DevOps workflows, and secure code before you commit it.",
+  "mediaType": "object",
+  "contentType": "text/html",
+  "images": [
+    "https://github.githubassets.com/images/modules/site/social-cards/github-social.png"
+  ],
+  "videos": [],
+  "favicons": ["https://github.githubassets.com/favicons/favicon.svg"]
+}
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<b>Built with Next JS, Tailwind CSS and link-preview-js, as a part of <a href="https://findcoder.io">findcoder.io</a> hackathon</b>
