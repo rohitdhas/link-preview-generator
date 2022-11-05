@@ -1,4 +1,4 @@
-![Icon](https://raw.githubusercontent.com/rohitdhas/link-preview-generator/main/public/logo.png)
+<img src="https://raw.githubusercontent.com/rohitdhas/link-preview-generator/main/public/logo.png" width="50px" height="50px">
 
 ## Link Preview Generator
 
