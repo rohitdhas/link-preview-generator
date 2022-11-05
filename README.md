@@ -1,10 +1,10 @@
-# ⚡
+<p style="font-size: 2rem;">⚡</p>
 
 ## Link Preview Generator
 
 Generate awesome link previews in your own website...
 
-![Banner](https://raw.githubusercontent.com/rohitdhas/storefront/main/public/link-preview-banner.png)
+![Banner](https://raw.githubusercontent.com/rohitdhas/link-preview-generator/main/public/link-preview-banner.png)
 
 ## 🌐 Link Preview API
 
